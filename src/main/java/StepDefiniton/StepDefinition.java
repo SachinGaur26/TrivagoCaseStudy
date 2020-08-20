@@ -51,9 +51,9 @@ public class StepDefinition {
 	@AfterStep
 	public void takesScreenshot(Scenario scenario)
 	{
-		System.out.println("sdjfbksd");
+		
 		final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-	      scenario.embed(screenshot, "image/png"); // ... and embed it in the report.
+	      scenario.embed(screenshot, "image/png"); //  embed it in html report.
 		
 	}
 	
